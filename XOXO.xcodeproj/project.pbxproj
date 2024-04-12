@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BCFD796E2BC8506600E495C8 /* XOXOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD796D2BC8506600E495C8 /* XOXOApp.swift */; };
-		BCFD79702BC8506600E495C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD796F2BC8506600E495C8 /* ContentView.swift */; };
+		BCFD796E2BC8506600E495C8 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD796D2BC8506600E495C8 /* AppEntry.swift */; };
+		BCFD79702BC8506600E495C8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD796F2BC8506600E495C8 /* StartView.swift */; };
 		BCFD79722BC8506700E495C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFD79712BC8506700E495C8 /* Assets.xcassets */; };
 		BCFD79752BC8506700E495C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFD79742BC8506700E495C8 /* Preview Assets.xcassets */; };
 		BCFD797C2BC8DEB200E495C8 /* XOXO Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFD797B2BC8DEB200E495C8 /* XOXO Launch Screen.storyboard */; };
+		BCFD797F2BC8E23D00E495C8 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD797E2BC8E23D00E495C8 /* GameModels.swift */; };
+		BCFD79852BC8F04700E495C8 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD79842BC8F04700E495C8 /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCFD796A2BC8506600E495C8 /* XOXO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XOXO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCFD796D2BC8506600E495C8 /* XOXOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOXOApp.swift; sourceTree = "<group>"; };
-		BCFD796F2BC8506600E495C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCFD796D2BC8506600E495C8 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		BCFD796F2BC8506600E495C8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		BCFD79712BC8506700E495C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFD79742BC8506700E495C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCFD797B2BC8DEB200E495C8 /* XOXO Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "XOXO Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BCFD797E2BC8E23D00E495C8 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		BCFD79842BC8F04700E495C8 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 		BCFD796C2BC8506600E495C8 /* XOXO */ = {
 			isa = PBXGroup;
 			children = (
-				BCFD796D2BC8506600E495C8 /* XOXOApp.swift */,
-				BCFD796F2BC8506600E495C8 /* ContentView.swift */,
+				BCFD79832BC8F00100E495C8 /* Utilities */,
+				BCFD796D2BC8506600E495C8 /* AppEntry.swift */,
+				BCFD796F2BC8506600E495C8 /* StartView.swift */,
+				BCFD797D2BC8E21E00E495C8 /* Models */,
 				BCFD79712BC8506700E495C8 /* Assets.xcassets */,
 				BCFD797B2BC8DEB200E495C8 /* XOXO Launch Screen.storyboard */,
 				BCFD79732BC8506700E495C8 /* Preview Content */,
@@ -68,6 +74,22 @@
 				BCFD79742BC8506700E495C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCFD797D2BC8E21E00E495C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD797E2BC8E23D00E495C8 /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCFD79832BC8F00100E495C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD79842BC8F04700E495C8 /* ViewModifiers.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFD79702BC8506600E495C8 /* ContentView.swift in Sources */,
-				BCFD796E2BC8506600E495C8 /* XOXOApp.swift in Sources */,
+				BCFD79702BC8506600E495C8 /* StartView.swift in Sources */,
+				BCFD797F2BC8E23D00E495C8 /* GameModels.swift in Sources */,
+				BCFD796E2BC8506600E495C8 /* AppEntry.swift in Sources */,
+				BCFD79852BC8F04700E495C8 /* ViewModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -258,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -286,7 +310,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "XOXO Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +342,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "XOXO Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
