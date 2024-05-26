@@ -1,22 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "LaunchScreen.pdf",
-      "idiom" : "universal"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "filename" : "LaunchScreenDark.pdf",
+      "filename" : "44BBEB11-EEE9-45E3-A479-68DB9FF0C4AA.svg",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
   }
 }
